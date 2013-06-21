@@ -8,6 +8,6 @@ class Task < ActiveRecord::Base
   end
 end
 
-Task.create(description: "Give two doses of happy powder to Chris")
-Task.create(description: "Make that five doses of happy powder to Chris")
-Task.delete(3)
+# Task.create(description: "Give two doses of happy powder to Chris")
+# Task.create(description: "Make that five doses of happy powder to Chris")
+# Task.delete(3)
