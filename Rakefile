@@ -2,9 +2,6 @@ require 'rake'
 require 'rspec/core/rake_task'
 require_relative './config/application'
 
-
-
-
 desc "create the database"
 task "db:create" do
   touch DB_PATH

@@ -5,4 +5,4 @@ class List < ActiveRecord::Base
 end
 
 
-List.create({name: "Groceries"})
+List.create({name: "Shoppping"})
