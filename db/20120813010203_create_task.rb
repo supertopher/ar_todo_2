@@ -1,10 +1,10 @@
-require_relative '../config'
+require_relative '../application'
 
 class CreateTask < ActiveRecord::Migration
 
   def change
     create_table :tasks do |t|
-      t.string :task
+      t.string :description
       t.boolean :completed, default: false
   end
 
