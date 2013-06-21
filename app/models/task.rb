@@ -3,11 +3,17 @@ require_relative '../../config/application'
 class Task < ActiveRecord::Base
   has_one :list
 
-  def mark_completed
-    
+  def self.mark_completed index
+    x = Task.find(index)
+    x.update_attributes(completed: true)
   end
+
+  def self.display(index)
+    x = Task.find(index)
+    x.description
+  end
+
+ 
+
 end
 
-# Task.create(description: "Give two doses of happy powder to Chris")
-# Task.create(description: "Make that five doses of happy powder to Chris")
-# Task.delete(3)
