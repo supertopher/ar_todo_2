@@ -5,7 +5,7 @@ class Task < ActiveRecord::Base
 
   def self.mark_completed index
     x = Task.find(index)
-    x.update_attributes(completed: true)
+    x.update_attributes(completed: "[X]")
   end
 
   def self.display(index)
@@ -13,7 +13,7 @@ class Task < ActiveRecord::Base
     x.description
   end
 
- 
+
 
 end
 

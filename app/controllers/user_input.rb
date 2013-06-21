@@ -3,6 +3,7 @@ require_relative '../models/task'
 
 
 case ARGV[0]
+  
 when "list"
   puts "Listing All Tasks"
   Task.all.each { |hello| puts "#{hello.id}. #{hello.description}\nCompleted? #{hello.completed}" }
