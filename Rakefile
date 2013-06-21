@@ -1,11 +1,8 @@
 require 'rake'
 require 'rspec/core/rake_task'
-<<<<<<< HEAD
 require_relative './config/application'
-=======
-require_relative 'db/config'
-require_relative "/app/lib/todo_populator"
->>>>>>> 4b6859dac98b005d945658f533c11cb2ffad5c20
+
+
 
 
 desc "create the database"

@@ -7,6 +7,7 @@ class CreateTask < ActiveRecord::Migration
       t.string :description
       t.boolean :completed, default: false
       t.integer :list_id
+    end
   end
 
 end
