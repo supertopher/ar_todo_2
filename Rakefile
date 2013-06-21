@@ -1,6 +1,7 @@
 require 'rake'
 require 'rspec/core/rake_task'
 require_relative 'db/config'
+require_relative "/app/lib/todo_populator"
 
 require_relative 'config/application'
 
@@ -39,6 +40,13 @@ desc 'Start IRB with application environment loaded'
 task "console" do
   exec "irb -r./config/application"
 end
+
+# desc 'Populate the database with tasks'
+# task "db:populate_tasks" do
+#   puts "link the task dude"
+# end
+
+
 
 desc "Run the specs"
 RSpec::Core::RakeTask.new(:spec)
